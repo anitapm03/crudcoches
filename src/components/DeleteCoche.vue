@@ -10,7 +10,7 @@ const service = new ServiceCoches();
 export default {
     name: "DeleteCoche",
     mounted(){
-      service.deleteCoche(this.$route.params.id).then(result => {
+      service.deleteCocheFetch(this.$route.params.id).then(result => {
         console.log(result);
         this.$router.push("/");
       })

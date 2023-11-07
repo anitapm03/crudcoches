@@ -45,7 +45,7 @@ export default {
     methods: {
       insertarCoche(){
         console.log(this.coche)
-        service.insertCoche(this.coche).then(result => {
+        service.insertCocheFetch(this.coche).then(result => {
           console.log(result);
           this.$router.push("/");
         })

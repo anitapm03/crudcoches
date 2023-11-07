@@ -34,7 +34,7 @@ export default {
       }
     },
     mounted(){
-      service.getCocheId(this.$route.params.id).then(result => {
+      service.getCocheIdFetch(this.$route.params.id).then(result => {
         this.coche = result;
         this.status = true;
       })

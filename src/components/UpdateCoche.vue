@@ -16,7 +16,7 @@
       <label>Imagen</label>
       <input type="text" v-model="coche.imagen" class="form form-control"/>
       <br />
-      <button class="btn btn-info">Crear!</button>
+      <button class="btn btn-info">Guardar Cambios!</button>
     </form>
 
     <br/> 
@@ -51,7 +51,7 @@ export default {
         this.$router.push("/");
       },
       actualizarCoche(){
-        service.updateCoche(this.coche).then(result => {
+        service.updateCocheFetch(this.coche).then(result => {
           console.log(result);
           this.$router.push("/");
         })

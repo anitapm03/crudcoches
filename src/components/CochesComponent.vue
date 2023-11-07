@@ -56,7 +56,7 @@ export default {
         }
     },
     mounted(){
-        service.getCoches().then(result => {
+        service.getCochesFetch().then(result => {
             this.coches = result;
             this.status = true;
         })
